@@ -1,0 +1,21 @@
+// let ConsultarSaldo = document.getElementById('consultarSaldo');
+
+// ConsultarSaldo.addEventListener('click', function () {
+//     document.getElementById('sectionListar').style.zIndex = '0';
+//     document.getElementById('sectionBuscar').style.zIndex = '0';
+//     document.getElementById('sectionCrear').style.zIndex = '0';
+//     document.getElementById('sectionConsultarSaldo').style.zIndex = '1';
+//     document.getElementById('sectionConsultarSaldo').innerHTML = ''
+
+//     let saldo = obtenerSaldo();
+
+//     let saldoElement = document.createElement('p');
+//     saldoElement.textContent = 'Tu saldo actual es: ' + saldo;
+
+//     document.getElementById('sectionConsultarSaldo').innerHTML = '';
+//     document.getElementById('sectionConsultarSaldo').append(saldoElement);
+// });
+
+// function obtenerSaldo() {
+//     return 1000.00;
+// }
