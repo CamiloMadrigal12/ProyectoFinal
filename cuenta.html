@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./view/css/login.css" />
+    <script type="module" src="./view/js/login.js" defer></script>
+
+    <script type="module" src="./controler/ControlerCajero.js" defer></script>
+
+</head>
+
+<body>
+    <main id="panel" class="panel">
+
+        <h1>Bienvenido usuario</h1>
+
+        <header>
+            <button id="ConsultarSaldo">Consultar Saldo</button>
+            <button id="RetirarDinero">Retirar Dinero</button>
+            <button id="TransferirACuentasInscritas">Transferir a Cuentas Inscritas</button>
+            <button id="ConsignarACuentaPropia">Consignar a Cuenta Propia</button>
+            <button id="cerrarSeccion">Cerrar Seccion</button>
+        </header>
+
+        <div>
+            <section id="sectionConsultarSaldo">Consultar Saldo</section>
+            <section id="sectionRetirarDinero">
+                <form action="">
+                    <input type="text" id="ValorRetirar">
+                    <input type="button" value="" id="BotonRetirar">
+                </form>
+            </section>
+            <section id="sectionTransferirACuentasInscritas">Transferir a Cuentas Inscritas</section>
+            <section id="sectionConsignarACuentaPropia">Consignar a Cuenta Propia</section>
+        </div>
+    </main>
+
+
+    <section id="spinner" class="spinner">
+        <img src="https://clasespatysandoval.files.wordpress.com/2018/06/cargando.gif" alt="">
+    </section>
+
+
+</body>
+
+</html>
