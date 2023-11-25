@@ -30,36 +30,19 @@ ConsultarSaldo.addEventListener('click', function () {
 })
 
 
+ 
 
+    saldo = Number(prompt("Ingrese su saldo actual: "));
 
-let RetirarDinero = document.getElementById('RetirarDinero')
-RetirarDinero.addEventListener('click', function (RetirarDinero) {
-    document.getElementById('sectionRetirarDinero').innerHTML = ''
-    document.getElementById('sectionRetirarDinero').style.zIndex = '3'
-    document.getElementById('sectionConsultarSaldo').style.zIndex = '2'
-    document.getElementById('sectionTransferirACuentasInscritas').style.zIndex = '2'
-    document.getElementById('sectionConsignarACuentaPropia').style.zIndex = '2'
     
     function mostrarSaldoActual() {
         console.log("Su saldo es: " + saldo);
     }
-    // ConsultaSaldo.map((Csaldo) => {
-    //     let saldo = document.createElement('p')
-    //     let movimiento = document.createElement('p')
-    //     let fecha = document.createElement('p')
-    //     let card = document.createElement('article')
-    //     saldo.textContent = Csaldo.saldo
-    //     movimiento.textContent = Csaldo.movimiento
-    //     fecha.textContent = Csaldo.fecha
-    //     card.classList.add('card')
-    //     card.append(saldo, movimiento, fecha)
-    //     document.getElementById('sectionRetirarDinero').append(card)
-
         function retirarDinero() {
             let valorRetiro = Number(prompt("Ingrese el valor a retirar: "));
             if (valorRetiro <= saldo) {
                 saldo -= valorRetiro;
-                console.log("Su nuevo saldo es: " + saldo);
+                console.log("Se retiraron " + valorRetiro + " pesos. Su nuevo saldo es: " + saldo);
             } else {
                 console.log("Fondos insuficientes");
             }
@@ -78,7 +61,7 @@ RetirarDinero.addEventListener('click', function (RetirarDinero) {
             mostrarSaldoActual();
             retirarDinero();
         });
-    });
+    
         
         // function saldoAcutual() {
         // console.log("su saldo es: " + saldo)
